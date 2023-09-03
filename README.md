@@ -1,20 +1,6 @@
-# Build a Terminal Chat interface with Stream
+# Terminal-Chat app using TCP
 
-Tutorial:
+## This app has been implemented using a Server-Client Architecture
+![image](https://github.com/AnurajBhaskar47/chat-terminal/assets/97795939/59827f56-f9cb-4830-8a81-abfd0eb071f1)
 
-# Pre-requisites
-- Make sure you have Node.js (version 8 or later) and [yarn](https://yarnpkg.com/lang/en/docs/install/) installed on your machine.
-
-## Build instructions
-- Clone this repository and `cd` into it.
-- Run `yarn` to install the dependencies
-- See tutorial for notes on how to get the required credentials from Stream.
-- Rename the `.env.example` file to `.env` and update it with your Stream credentials.
-- Run `node server.js` from within the project root to start the Node server on port 5500.
-- Run `node app.js` to test the application
-
-## Built With
-- [Stream Chat](https://getstream.io/chat/)
-
-## Licence
-- [MIT](https://opensource.org/licenses/MIT)
+For simple understanding, the clients connect to the same Chatroom (Server) at a given time. When the respective users join the server, they are given nicknames(tokens) for respective clients. This enables for a simple & easy TCP implementation for sharing messages on a terminal for devices connected to the same network.
